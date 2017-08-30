@@ -5,9 +5,9 @@ one column by using bits mask.
 
 [![Build Status](https://secure.travis-ci.org/KonstantinKuklin/doctrine-compressed-fields.png?branch=master)](https://travis-ci.org/KonstantinKuklin/doctrine-compressed-fields)
 [![GitHub release](https://img.shields.io/github/release/KonstantinKuklin/doctrine-compressed-fields.svg)](https://github.com/KonstantinKuklin/doctrine-compressed-fields/releases/latest)
-[![Total Downloads](https://img.shields.io/packagist/dt/KonstantinKuklin/doctrine-compressed-fields.svg)](https://packagist.org/packages/KonstantinKuklin/doctrine-compressed-fields)
-[![Daily Downloads](https://img.shields.io/packagist/dd/KonstantinKuklin/doctrine-compressed-fields.svg)](https://packagist.org/packages/KonstantinKuklin/doctrine-compressed-fields)
-[![Minimum PHP Version](http://img.shields.io/badge/php-%3E%3D%205.5-8892BF.svg)](https://php.net/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/KonstantinKuklin/doctrine-compressed-fields/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/KonstantinKuklin/doctrine-compressed-fields/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/KonstantinKuklin/doctrine-compressed-fields/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/KonstantinKuklin/doctrine-compressed-fields/?branch=master)
+[![Minimum PHP Version](http://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg)](https://php.net/)
 [![License](https://img.shields.io/packagist/l/KonstantinKuklin/doctrine-compressed-fields.svg)](https://packagist.org/packages/KonstantinKuklin/doctrine-compressed-fields)
 
 DO NOT USE IN PRODUCTION! Developing still in progress.
