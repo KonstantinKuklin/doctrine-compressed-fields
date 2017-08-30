@@ -1,0 +1,31 @@
+language: php
+
+sudo: false
+
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+
+env:
+  - DOCTRINE_VERSION=~2.4.0
+  - DOCTRINE_VERSION=~2.5.0
+  - DOCTRINE_VERSION=2.6.x-dev
+
+before_script:
+  - composer require --no-update "doctrine/orm":"${DOCTRINE_VERSION}"
+  - composer install
+
+script:
+  - vendor/bin/phpunit --verbose --colors --coverage-clover=coverage.clover
+
+after_success:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - DOCTRINE_VERSION=2.6.x-dev
