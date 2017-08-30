@@ -98,7 +98,7 @@ class LoadFlushListener implements EventSubscriber
             $this->updateCompressedHubProperty($em, $entity);
         }
 
-        if (!$this->originalData) {
+        if (empty($this->originalData)) {
             return;
         }
 
@@ -162,7 +162,7 @@ class LoadFlushListener implements EventSubscriber
                 $valueList[$maskReflection->getName()] = $value;
             }
 
-            if (!$valueList) {
+            if (empty($valueList)) {
                 continue;
             }
 

@@ -22,7 +22,7 @@ class BitNormalizer
         foreach ($bitList as $bitRow) {
             $matches = [];
             preg_match('/^(?<first>[\d]+)(-(?<second>[\d]+))?$/', (string)$bitRow, $matches);
-            if (!$matches) {
+            if (empty($matches)) {
                 throw new WrongBitMappingRule("Incorrect Bit syntax: '{$bitRow}'");
             }
 
